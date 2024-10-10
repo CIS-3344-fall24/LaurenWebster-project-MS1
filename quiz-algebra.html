@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar" style="width: 50%;"></div> <!-- Adjust width as needed -->
+    </div>
+    <!-- Quiz Form -->
+    <section class="quiz-container">
+        <h1>General Knowledge Quiz</h1>
+        <form action="complete.html">
+            <!-- Single-choice question -->
+            <fieldset>
+                <legend>Select one answer:</legend>
+                <p>What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="Paris" required> Paris</label><br>
+                <label><input type="radio" name="q1" value="London"> London</label><br>
+                <label><input type="radio" name="q1" value="Rome"> Rome</label><br>
+            </fieldset>
+
+            <!-- Multiple-choice question -->
+            <fieldset>
+                <legend>Select all that apply:</legend>
+                <p>Which of the following are programming languages?</p>
+                <label><input type="checkbox" name="q2" value="Python"> Python</label><br>
+                <label><input type="checkbox" name="q2" value="Java"> Java</label><br>
+                <label><input type="checkbox" name="q2" value="HTML"> HTML</label><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+</body>
+</html>
